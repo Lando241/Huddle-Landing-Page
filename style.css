@@ -1,0 +1,42 @@
+/* 
+
+Mobile: 375px
+Desktop: 1440px
+
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%) 
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("/images/bg-desktop.svg");
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.hero-heading,
+.hero-text {
+  color: #fff;
+}
