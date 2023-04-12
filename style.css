@@ -23,11 +23,21 @@ body {
   font-weight: 400;
   background-color: hsl(257, 40%, 49%);
   background-image: url("/images/bg-desktop.svg");
+  background-size: cover;
+}
+
+header {
+  padding: 0;
+  margin: 4.8rem 0 4.8rem 8rem;
 }
 
 .hero {
+  max-width: 144rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+  padding: 4.8rem 8rem;
+  /* margin: 4.8rem 8rem; */
 }
 
 .hero-text-box {
@@ -39,4 +49,46 @@ body {
 .hero-heading,
 .hero-text {
   color: #fff;
+}
+
+.hero-heading,
+.hero-btn {
+  font-family: "Poppins";
+}
+
+.hero-heading {
+  font-size: 4rem;
+  letter-spacing: 0.75px;
+  padding-top: 4.8rem;
+  padding-right: 3.2rem;
+}
+
+.hero-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+.hero-btn,
+.hero-btn:link,
+.hero-btn:visited {
+  display: inline-block;
+  width: 18rem;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 1.2rem 3.2rem;
+  color: hsl(257, 40%, 49%);
+  background-color: #ffffff;
+  border-radius: 50px;
+  border: 1px solid hsl(257, 40%, 49%);
+  text-align: center;
+  box-shadow: 1px 1rem 2.4rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: hsl(300, 69%, 71%);
+  color: #ffffff;
 }
