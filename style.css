@@ -26,10 +26,14 @@ body {
   background-size: cover;
 }
 
+/*   Header Section   */
+
 header {
   padding: 0;
   margin: 4.8rem 0 4.8rem 8rem;
 }
+
+/*   Hero/Main Section   */
 
 .hero {
   max-width: 144rem;
@@ -37,13 +41,19 @@ header {
   grid-template-columns: 1fr 1fr;
   gap: 3.2rem;
   padding: 4.8rem 8rem;
-  /* margin: 4.8rem 8rem; */
+  margin: 0 auto;
+  margin-bottom: 6.4rem;
+}
+
+.hero-img {
+  width: 100%;
 }
 
 .hero-text-box {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  padding-left: 3.2rem;
 }
 
 .hero-heading,
@@ -60,7 +70,7 @@ header {
   font-size: 4rem;
   letter-spacing: 0.75px;
   padding-top: 4.8rem;
-  padding-right: 3.2rem;
+  /* padding-right: 3.2rem; */
 }
 
 .hero-text {
@@ -79,7 +89,7 @@ header {
   font-size: 1.6rem;
   padding: 1.2rem 3.2rem;
   color: hsl(257, 40%, 49%);
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 50px;
   border: 1px solid hsl(257, 40%, 49%);
   text-align: center;
@@ -90,5 +100,57 @@ header {
 .hero-btn:hover,
 .hero-btn:active {
   background-color: hsl(300, 69%, 71%);
-  color: #ffffff;
+  color: #fff;
+}
+
+/*   Footer Section */
+
+.footer {
+  max-width: 130rem;
+  margin-bottom: 2.4rem;
+  padding: 0 3.2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  stroke: #fff;
+  height: 1.8rem;
+  width: 1.8em;
+  padding: 0.8rem;
+  border: solid 1px #fff;
+  border-radius: 50%;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: hsl(300, 69%, 71%);
 }
